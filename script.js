@@ -8,7 +8,7 @@
 
     setInterval(() =>{
         (second <= 9) ? document.getElementById('segundo').innerText =  `0${second}` : document.getElementById('segundo').innerText = second;
-        (minutes <= 9) ? document.getElementById('minuto').innerText =  `0${minutes}`: document.getElementById('minuto').innerText = second;
+        (minutes <= 9) ? document.getElementById('minuto').innerText =  `0${minutes}`: document.getElementById('minuto').innerText = minutes;
         document.getElementById('hora').innerText = hours;
         
         if (second == 59){
@@ -23,7 +23,6 @@
         }
         if (hours == 23 && minutes == 59){
             hours = 0;
-            
         }
         second++;
     },1000);
