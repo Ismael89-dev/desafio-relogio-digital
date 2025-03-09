@@ -6,7 +6,10 @@
 }
 
 body{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    height: 90vh; 
 }
 
 .container{
@@ -14,7 +17,10 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 90vh;
+    height: 150px;
+    width: 400px;
+    background-color: #212121;
+    border-radius: 10px;
 }
 
 .container .relogio{
@@ -27,6 +33,7 @@ body{
 
 .container div{
     position: relative;
+    color: #FFF;
 }
 
 .container div:not(:last-child){
