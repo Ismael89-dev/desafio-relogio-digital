@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.container .relogio{
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div{
+    position: relative;
+}
+
+.container div:not(:last-child){
+    margin-right: 20px;
+}
+
+.container .relogio #hora::before{
+    content: ":";
+    position: absolute;
+    right: -15px;
+}
+
+.container .relogio #minuto:before{
+    content: ":";
+    position: absolute;
+    right: -15px;
+}
+
+.container .relogio #segundo{
+    
+}
+
+.container .date{
+    font-size: 19px;
+}
