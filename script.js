@@ -9,7 +9,7 @@
     setInterval(() =>{
         (second <= 9) ? document.getElementById('segundo').innerText =  `0${second}` : document.getElementById('segundo').innerText = second;
         (minutes <= 9) ? document.getElementById('minuto').innerText =  `0${minutes}`: document.getElementById('minuto').innerText = minutes;
-        (minutes <= 9) ? document.getElementById('hora').innerText = `0${hours}` : document.getElementById('hora').innerText = hours;
+        (hours <= 9) ? document.getElementById('hora').innerText = `0${hours}` : document.getElementById('hora').innerText = hours;
         
         if (second == 59){
             second = 0;
